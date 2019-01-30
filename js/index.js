@@ -116,4 +116,11 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
+function openBrowser(url){
+	//var url = 'https://cordova.apache.org';
+	var target = '_blank';
+	var options = "location = yes"
+	var ref = cordova.InAppBrowser.open(url, target, options);
+}
+
 	
