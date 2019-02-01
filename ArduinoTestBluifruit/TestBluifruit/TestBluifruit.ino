@@ -39,7 +39,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
-int b = 0;
+//int b = 0;
 int c = 0;
 /**************************************************************************/
 /*!
