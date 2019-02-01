@@ -21,6 +21,7 @@
 #define MINIMUM_FIRMWARE_VERSION    "0.6.6"
 #define MODE_LED_BEHAVIOUR          "MODE"
 #define LED                     9
+//#define LED1                    3
 /*=========================================================================*/
 
 
@@ -38,6 +39,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
+int b = 0;
 int c = 0;
 /**************************************************************************/
 /*!
@@ -113,6 +115,7 @@ void setup(void)
 
 
   pinMode (LED, OUTPUT);
+  //pinMode (LED1, OUTPUT);
 }
 
 /**************************************************************************/
@@ -145,6 +148,7 @@ void loop(void)
   {
     //int c = ble.read();
     c = ble.parseInt();
+    //b = ble.parseInt();
     //Serial.print((char)c);
     //if ( c == '1') 
     //digitalWrite (LED, HIGH);
@@ -152,6 +156,9 @@ void loop(void)
     //if (c == '0')
     //digitalWrite (LED, LOW);
   }
+  //Serial.print("Hej: ");
+  //Serial.println (b);
+  //analogWrite (LED1, b);
   Serial.print("Lysstyrke: ");
   Serial.println (c);
   analogWrite (LED, c);
