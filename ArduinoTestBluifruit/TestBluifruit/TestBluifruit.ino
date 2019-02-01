@@ -20,6 +20,7 @@
 #define FACTORYRESET_ENABLE         0
 #define MINIMUM_FIRMWARE_VERSION    "0.6.6"
 #define MODE_LED_BEHAVIOUR          "MODE"
+#define LED                     9
 /*=========================================================================*/
 
 
@@ -37,6 +38,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
+int c = 0;
 /**************************************************************************/
 /*!
     @brief  Sets up the HW an the BLE module (this function is called
@@ -107,6 +109,10 @@ void setup(void)
   ble.setMode(BLUEFRUIT_MODE_DATA);
 
   Serial.println(F("******************************"));
+
+
+
+  pinMode (LED, OUTPUT);
 }
 
 /**************************************************************************/
@@ -134,10 +140,20 @@ void loop(void)
     Serial.print("* "); Serial.print(ble.available()); Serial.println(F(" bytes available from BTLE"));
   }
   // Echo received data
+  
   while ( ble.available() )
   {
-    int c = ble.read();
-    Serial.print((char)c);
+    //int c = ble.read();
+    c = ble.parseInt();
+    //Serial.print((char)c);
+    //if ( c == '1') 
+    //digitalWrite (LED, HIGH);
+    //analogWrite (LED, c)
+    //if (c == '0')
+    //digitalWrite (LED, LOW);
   }
+  Serial.print("Lysstyrke: ");
+  Serial.println (c);
+  analogWrite (LED, c);
   delay(1000);
 }

@@ -123,4 +123,13 @@ function openBrowser(url){
 	var ref = cordova.InAppBrowser.open(url, target, options);
 }
 
+function ledOnButton () {
+	document.getElementById("ledOnButton").innerHTML = 
+		
 	
+}
+
+function ledOffButton () {
+	
+	
+}	
