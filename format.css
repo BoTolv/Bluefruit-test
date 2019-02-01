@@ -3,7 +3,8 @@ body{
 }	
 img{
 	width: 100%;
-	right: 50%
+	right: 50%;
+	border-style: solid;
 }
 
 /* The content div soround
