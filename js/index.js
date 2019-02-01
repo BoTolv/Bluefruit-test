@@ -106,7 +106,8 @@ function onSend(){
 }
 
 function disconnect() {
-	ble.disconnect//(deviceId, onDisconnect, onError);
+	ble.disconnect(deviceId, onDisconnect, onError);
+	document.getElementById("statusDiv").innerHTML = "Status: Disconnected";
 }
 
 function onDisconnect(){
