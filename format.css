@@ -1,5 +1,5 @@
 body{
-	background-color: green;
+	background-color: blue;
 }	
 img{
 	width: 100%;	
@@ -36,5 +36,11 @@ img{
 	width: 100%;
 }
 #ledOffButton{
+	width: 100%;
+}
+#ledOnButton1{
+	width: 100%;
+}
+#ledOffButton1{
 	width: 100%;
 }

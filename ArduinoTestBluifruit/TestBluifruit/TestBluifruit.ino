@@ -39,7 +39,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
-int b = 1;
+int b = 0;
 int c = 0;
 /**************************************************************************/
 /*!
@@ -115,7 +115,7 @@ void setup(void)
 
 
   pinMode (LED, OUTPUT);
-  //pinMode (LED1, OUTPUT);
+  pinMode (LED1, OUTPUT);
 }
 
 /**************************************************************************/
