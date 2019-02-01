@@ -2,7 +2,8 @@ body{
 	background-color: blue;
 }	
 img{
-	width: 100%;	
+	width: 50%;
+	right: 50%
 }
 
 /* The content div soround
@@ -27,7 +28,7 @@ img{
 
 /* width will be 100% of content */
 #refreshButton{
-	width: 100%;
+	width: 30%;
 }
 #sendButton{
 	width: 30%;
@@ -43,8 +44,4 @@ img{
 }
 #ledOffButton1{
 	width: 30%;
-}
-#img{
-	right: 50%;
-	width: 45%;
 }
