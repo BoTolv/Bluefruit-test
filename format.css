@@ -12,14 +12,14 @@ img{
   */
 #content {
 	width: 75%;
-	margin: auto;
+	margin: 90%;
 }
 
 #bleDeviceList{
 	
 }	
 #messageInput{
-	
+	width: 20%;
 }
 #list{
 	background-color: red;
@@ -30,17 +30,17 @@ img{
 	width: 100%;
 }
 #sendButton{
-	width: 100%;
+	width: 40%;
 }
 #ledOnButton{
-	width: 100%;
+	width: 40%;
 }
 #ledOffButton{
-	width: 100%;
+	width: 40%;
 }
 #ledOnButton1{
-	width: 100%;
+	width: 40%;
 }
 #ledOffButton1{
-	width: 100%;
+	width: 40%;
 }
