@@ -2,10 +2,10 @@ body{
 	background-color: #e6f2ff;
 }	
 img{
-	width: 100%;
+	width: 90%;
 	right: 50%;
 	border-style: solid;
-	border-width: 10px;
+	border-width: 8px;
 }
 
 /* The content div soround
