@@ -93,7 +93,7 @@ function onConnError(){
 }
 
 function data(txt){
-	messageInput.value = txt;
+	messageInput.value = parseInt;
 }	
 
 function sendData() { // send data to Arduino
