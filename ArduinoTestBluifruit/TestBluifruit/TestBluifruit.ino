@@ -145,7 +145,7 @@ void loop(void)
   // Echo received data
   //else (!ble.available()); { //KIG PÅ DEN HER, hvorfor ; efter else? 
     //Serial.print("* "); Serial.print(!ble.available()); Serial.println(F("Ikke forbindelse til BLE"));
-   // analogWrite(LED, LOW);
+    //analogWrite(LED, LOW);
     //analogWrite(LED1, LOW);
   //}
   while ( ble.available() )
