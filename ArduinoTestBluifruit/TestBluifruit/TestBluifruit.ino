@@ -123,6 +123,8 @@ void setup(void)
     @brief  Constantly poll for new command or response data
 */
 /**************************************************************************/
+String data = "";
+
 void loop(void)
 {
   // Check for user input
@@ -143,10 +145,14 @@ void loop(void)
     Serial.print("* "); Serial.print(ble.available()); Serial.println(F(" bytes available from BTLE"));
   }
   // Echo received data
+  
   while ( ble.available() )
   {
+    
     //int c = ble.read();
-    c = ble.parseInt();
+    char c = ble.read();
+    //c = ble.parseInt();
+    data += c;
     //Serial.print((char)c);
     //if ( c == '1') 
     //digitalWrite (LED, HIGH);
@@ -155,7 +161,14 @@ void loop(void)
     //digitalWrite (LED, LOW);
   }
   Serial.print("Lysstyrke: ");
-  Serial.println (c);
+  Serial.println (data);
+  String LEDNummer = data.substring(0,2);
+  Serial.print("LEDNummer: "); 
+  Serial.println(LEDNummer);
+  String lysstyrke = data.substring(3);
+  Serial.print("lysstyrke: "); 
+  Serial.println(lysstyrke);
+  data = "";
   analogWrite (LED, c);
   delay(1000);
 
