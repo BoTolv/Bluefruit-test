@@ -143,7 +143,7 @@ void loop(void)
     Serial.print("* "); Serial.print(ble.available()); Serial.println(F(" bytes available from BTLE"));
   }
   // Echo received data
-  else (!ble.available()); {
+  else (!ble.available()); { //KIG PÅ DEN HER, hvorfor ; efter else? 
     Serial.print("* "); Serial.print(!ble.available()); Serial.println(F("Ikke forbindelse til BLE"));
     analogWrite(LED, LOW);
     analogWrite(LED1, LOW);
