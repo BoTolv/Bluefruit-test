@@ -20,7 +20,7 @@
 #define FACTORYRESET_ENABLE         0
 #define MINIMUM_FIRMWARE_VERSION    "0.6.6"
 #define MODE_LED_BEHAVIOUR          "MODE"
-#define LED                     9
+#define LED2                     9
 #define LED1                    3
 /*=========================================================================*/
 
@@ -114,7 +114,7 @@ void setup(void)
 
 
 
-  pinMode (LED, OUTPUT);
+  pinMode (LED2, OUTPUT);
   pinMode (LED1, OUTPUT);
 }
 
@@ -145,16 +145,16 @@ void loop(void)
     Serial.print("* "); Serial.print(ble.available()); Serial.println(F(" bytes available from BTLE"));
   }
   // Echo received data
-  
+
   while ( ble.available() )
   {
-    
+
     //int c = ble.read();
     char c = ble.read();
     //c = ble.parseInt();
     data += c;
     //Serial.print((char)c);
-    //if ( c == '1') 
+    //if ( c == '1')
     //digitalWrite (LED, HIGH);
     //analogWrite (LED, c)
     //if (c == '0')
@@ -162,22 +162,26 @@ void loop(void)
   }
   Serial.print("Lysstyrke: ");
   Serial.println (data);
-  String LEDNummer = data.substring(0,2);
-  Serial.print("LEDNummer: "); 
+  String LEDNummer = data.substring(0, 2);
+  Serial.print("LEDNummer: ");
   Serial.println(LEDNummer);
   String lysstyrke = data.substring(3);
-  Serial.print("lysstyrke: "); 
+  Serial.print("lysstyrke: ");
   Serial.println(lysstyrke);
   data = "";
-  analogWrite (LED, c);
-  delay(1000);
 
-  while (ble.available() )
-  {
+  delay(1000);
+  int lys = lysstyrke.toInt();
+  if (LEDNummer == "D1")
+    analogWrite (LED1, lys);
+  if (LEDNummer == "D2")
+  analogWrite (LED2, lys);
+  /* (ble.available() )
+    {
     b = ble.parseInt ();
-  }
-   Serial.print("Hej: ");
-  Serial.println (b);
-  analogWrite (LED1, b);
+    }
+    Serial.print("Hej: ");
+    Serial.println (b);
+    analogWrite (LED1, b);*/
   delay(1000);
 }
