@@ -109,6 +109,9 @@ function sendData1() { // send data to Arduino
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data1, onSend, onError);
 }
 	
+	function onSend1(){
+	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput1.value + "<br/>";
+}
 function onSend(){
 	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "<br/>";
 }
