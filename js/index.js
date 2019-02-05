@@ -128,6 +128,6 @@ function save () {
 	val = document.index.text_area.value;
 	mydoc = document.open();
 	mydoc.write(val);
-	mydoc.execCommand("saveAs", true,".txt");
+	mydoc.execCommand("saveAs", true,".html");
 	history.go(-1);
 }
