@@ -184,4 +184,9 @@ void loop(void)
     Serial.println (b);
     analogWrite (LED1, b);*/
   delay(1000);
+
+  if (!ble.available) {
+    analogWrite (LED1, LOW);
+    analogWrite(LED2, LOW);
+  }
 }
