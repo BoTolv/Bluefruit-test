@@ -148,17 +148,8 @@ void loop(void)
 
   while ( ble.available() )
   {
-
-    //int c = ble.read();
     char c = ble.read();
-    //c = ble.parseInt();
     data += c;
-    //Serial.print((char)c);
-    //if ( c == '1')
-    //digitalWrite (LED, HIGH);
-    //analogWrite (LED, c)
-    //if (c == '0')
-    //digitalWrite (LED, LOW);
   }
   Serial.print("Lysstyrke: ");
   Serial.println (data);
@@ -176,13 +167,7 @@ void loop(void)
     analogWrite (LED1, lys);
   if (LEDNummer == "D2")
   analogWrite (LED2, lys);
-  /* (ble.available() )
-    {
-    b = ble.parseInt ();
-    }
-    Serial.print("Hej: ");
-    Serial.println (b);
-    analogWrite (LED1, b);*/
+
   delay(1000);
 
 //if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
