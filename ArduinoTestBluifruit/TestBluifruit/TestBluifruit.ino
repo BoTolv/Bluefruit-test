@@ -170,9 +170,9 @@ void loop(void)
 
   delay(1000);
 
-//if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
+/*if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
   if (!ble.available) {
     analogWrite (LED1, LOW);
     analogWrite(LED2, LOW);
-  }
+  }*/
 }

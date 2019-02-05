@@ -52,8 +52,6 @@ function refreshDeviceList(){
 		ble.scan([blue.serviceUUID], 5, onDiscoverDevice, onError);
 	}
 }
-
-
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 	
