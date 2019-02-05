@@ -21,7 +21,7 @@
 #define MINIMUM_FIRMWARE_VERSION    "0.6.6"
 #define MODE_LED_BEHAVIOUR          "MODE"
 #define LED2                     9
-#define LED1                    3
+#define LED1                     3
 /*=========================================================================*/
 
 
@@ -185,6 +185,7 @@ void loop(void)
     analogWrite (LED1, b);*/
   delay(1000);
 
+//if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
   if (!ble.available) {
     analogWrite (LED1, LOW);
     analogWrite(LED2, LOW);

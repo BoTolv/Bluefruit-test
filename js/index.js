@@ -103,34 +103,22 @@ function sendData() { // send data to Arduino
 function data1(txt){
 	messageInput1.value = txt;
 }	
-
 function sendData1() { // send data to Arduino
 	 var data1 = stringToBytes(messageInput1.value);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data1, onSend, onError);
 }
-	
 	function onSend1(){
 	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput1.value + "<br/>";
 }
 function onSend(){
 	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "<br/>";
 }
-
 function disconnect() {
 	ble.disconnect(ConnDeviceId, onDisconnect, onError);
-	
 }
-
 function onDisconnect(){
 	document.getElementById("statusDiv").innerHTML = "Status: Disconnected";
 }
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
-}
-function save () {
-	val = document.index.text_area.value;
-	mydoc = document.open();
-	mydoc.write(val);
-	mydoc.execCommand("saveAs", true,".html");
-	history.go(-1);
 }

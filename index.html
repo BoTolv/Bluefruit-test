@@ -13,7 +13,7 @@
     </head>
      <body onload="onLoad()">
 
-		<img src = "pixar.gif">
+		<img src = "lampe.gif">
 		<h1>DaSaRaTo</h1>
            
 		<ul id="bleDeviceList"> </ul>  
@@ -29,6 +29,7 @@
 		<br><br>
 		<button id="ledOffButton" onclick = "data('D2,0')">Set Led Off</button>
 		<br><br><br>
+		<button id="50%" onclick = "data('D2, 127')"> Sæt LED til halv styrke</button> 
 		<input type="text" id="messageInput" value="0"/> 
 		<br>
 		<br>
@@ -40,13 +41,6 @@
 		<br><br>
 		<button id="ledOffButton1" onclick = "data('D1,0')">Set Led1 Off</button>
 		<br><br><br>
-		<input type="text" id="messageInput1" value="0"/>
-		<br>
-		<br>
-		<button id="sendButton1" onclick = "sendData1()">Send</button>
-		<br>
-		<br>
-		
 		<br>
 		<div id="sendDiv"></div>
 		<br><br>
@@ -54,11 +48,6 @@
 		<div id="receiveDiv"></div>
 		<br>
 		<br>
-		<input type = "button" onclick="save();" value="Save">
-		<br>
-		<textarea name ="text_area" id="text_area_id" rows="14" cols="40"></textarea>
-
-		
     </body>
 </html>
 			
