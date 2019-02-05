@@ -124,3 +124,10 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
+function save () {
+	val = document.index.text_area.value;
+	mydoc = document.open();
+	mydoc.write(val);
+	mydoc.execCommand("saveAs", true,".txt");
+	history.go(-1);
+}
