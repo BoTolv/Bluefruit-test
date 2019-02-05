@@ -15,14 +15,8 @@
 
 		<img src = "lampe.gif">
 		<h1>DaSaRaTo</h1>
-           
-		<ul id="bleDeviceList"> </ul>  
-		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
-		<br>
-		<div id="statusDiv">Status: Disconnected</div>
-		<div id="bleId">DeviceId:</div>
-		<div id="debugDiv"></div>
-		<br><br>
+        <br><br>   
+		
 		LED
 		<br>
 		<button id="ledOnButton" onclick = "data('D2,255')">100%</button>
@@ -49,7 +43,19 @@
 		<button id="ledOffButton1" onclick = "data('D1,0')">Sluk</button>
 		<br><br><br>
 		<br>
+		<input type="text" id="messageInput" value="0"/> 
+		<br>
+		<br>
+		<button id="sendButton" onclick = "sendData()">Send</button>
+		<br>
 		<div id="sendDiv"></div>
+		<br><br>
+		<ul id="bleDeviceList"> </ul>  
+		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+		<br>
+		<div id="statusDiv">Status: Disconnected</div>
+		<div id="bleId">DeviceId:</div>
+		<div id="debugDiv"></div>
 		<br><br>
 		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
 		<div id="receiveDiv"></div>
