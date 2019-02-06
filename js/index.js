@@ -31,6 +31,13 @@ var blue ={
 
 var ConnDeviceId;
 var deviceList =[];
+var slider = document.getElementById("voresSlider");
+var output = document.getElementById("data");
+output.innerHTML = slider.value;
+
+function slider.oninput(){
+	output.innerHTML = this.value;
+}
  
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
