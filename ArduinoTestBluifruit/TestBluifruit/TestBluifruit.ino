@@ -163,9 +163,9 @@ void loop(void)
 
   delay(1000);
   int lys = lysstyrke.toInt();
-  if (LEDNummer == "D1")
+  if (LEDNummer == "C1")
     analogWrite (LED1, lys);
-  if (LEDNummer == "D2")
+  if (LEDNummer == "C2")
   analogWrite (LED2, lys);
 
   delay(1000);
