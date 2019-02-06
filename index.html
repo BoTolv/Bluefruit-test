@@ -18,7 +18,7 @@
 		<br>
 		<center><img src = "logo.jpg" class="billede2"></center>
         <br>  
-		<br>
+		<!--<br>-->
 		<p class="sansserif"><i>Cubicle 1</i></p>
 		<br>
 		<button id="ledOnButton" onclick = "data('C1,64')">25%</button>
@@ -30,7 +30,7 @@
 		<button id="ledOnButton" onclick = "data('C1,0')">Sluk</button>
 		<br><br> 
 		<p class="sansserif"><i>Cubicle 2</i></p>
-		<br><br>
+		<br>
 		<button id="ledOnButton" onclick = "data('C2,64')">25%</button>
 		
 		<button id="ledOnButton" onclick = "data('C2,127')"> 50%</button> 
@@ -46,13 +46,13 @@
 		<div id="sendDiv"></div>
 		<br><br> 
 		<ul id="bleDeviceList"> </ul>  
-		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+		<button id="refreshButton" onClick = "refreshDeviceList()">Opdater listen</button>
 		<br>
 		<div id="statusDiv">Status: Disconnected</div>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
 		<br>
-		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>
+		<button id="disconnectButton"onClick="disconnect()">Frakoble forbindelsen</button>
 		<div id="receiveDiv"></div>
 		<br>
     </body>
