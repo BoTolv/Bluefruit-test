@@ -1,12 +1,15 @@
 body{
 	background-color: #e6f2ff;
 }	
-img{
+billede1{
 	width: 99%;
 	border-style: solid;
 	border-width: 5px;
+	height: 3; 
 }
-
+billede2{
+	width: 50%
+}
 /* The content div soround
   * every thing in the body
   * The css make content  smaller than the body itself
