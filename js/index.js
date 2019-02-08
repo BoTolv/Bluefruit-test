@@ -31,10 +31,15 @@ var blue ={
 
 var ConnDeviceId;
 var deviceList =[];
+
 var slider = document.getElementById("voresSlider");
-var output = document.getElementById("data"); // ændr i funktionen her og i HTML så den sender data til dioderne
+var output = document.getElementById("Slideren"); // ændr i funktionen her og i HTML så den sender data til dioderne
 output.innerHTML = slider.value;
 
+slider.oninput = function (){
+output.innerHTML = this.value;
+data (this.value);
+}
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
