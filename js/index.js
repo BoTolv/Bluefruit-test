@@ -41,6 +41,13 @@ function Test() {
 	slider = "C1," + slider;
 	data(slider);
 }
+function Test1() {
+	var slider = document.getElementById("voresSlider1").value;
+	document.getElementById("Slideren1").innerHTML = slider;
+	//output.innerHTML = slider.value;
+	slider1 = "C2," + slider1;
+	data(slider1);
+}
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
