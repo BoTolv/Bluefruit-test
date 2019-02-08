@@ -10,7 +10,7 @@ body{
 .billede2{
 	width: 50%;
 }
-/*.slidecontainer{
+.slidecontainer{
 	width: 80%;
 }
 .slider{
@@ -40,7 +40,7 @@ width: 25px;
 height: 25px;
 background: #4CAF50;
 cursor: pointer;
-}*/
+}
 #content {
 	width: 75%;
 	margin: 90%;

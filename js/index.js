@@ -31,9 +31,9 @@ var blue ={
 
 var ConnDeviceId;
 var deviceList =[];
-//var slider = document.getElementById("voresSlider");
-//var output = document.getElementById("data"); // ændr i funktionen her og i HTML så den sender data til dioderne
-//output.innerHTML = slider.value;
+var slider = document.getElementById("voresSlider");
+var output = document.getElementById("sendData"); // ændr i funktionen her og i HTML så den sender data til dioderne
+output.innerHTML = slider.value;
 
 //function slider.oninput(){
 //	output.innerHTML = this.value;
