@@ -43,7 +43,7 @@ function Test() {
 }
 function Test1() {
 	var slider1 = document.getElementById("voresSlider1").value;
-	document.getElementById("Slideren1").innerHTML = slider;
+	document.getElementById("Slideren1").innerHTML = slider1;
 	//output.innerHTML = slider.value;
 	slider1 = "C2," + slider1;
 	data(slider1);
