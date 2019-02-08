@@ -41,6 +41,9 @@ height: 25px;
 background: #4CAF50;
 cursor: pointer;
 }
+.slidecontainer1{
+	width: 80%;
+}
 .slider1{
 	-webkit-appearance: none;
 	appearance: none;
