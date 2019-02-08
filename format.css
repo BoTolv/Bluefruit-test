@@ -34,6 +34,7 @@ body{
 	height: 25px;
 	background: #4CAF50;
 	cursor: pointer;
+	width: 80%;
 }
 .slider::-moz-range-thumb{
 width: 25px;
