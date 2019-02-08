@@ -161,14 +161,14 @@ void loop(void)
   Serial.println(lysstyrke);
   data = "";
 
-  delay(1000);
+  delay(500);
   int lys = lysstyrke.toInt();
   if (LEDNummer == "C1")
     analogWrite (LED1, lys);
   if (LEDNummer == "C2")
   analogWrite (LED2, lys);
 
-  delay(1000);
+  delay(500);
 
 /*if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
   if (!ble.available) {
