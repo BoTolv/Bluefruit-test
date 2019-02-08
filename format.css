@@ -15,12 +15,12 @@ body{
 	width: 50%;
 }
 .slidecontainer{
-	width: 100%;
+	width: 85%;
 }
 .slider{
 	-webkit-appearance: none;
 	appearance: none;
-	width: 100%;
+	width: 85%;
 	height: 25px;
 	background: #d3d3d3;
 	outline: none;
