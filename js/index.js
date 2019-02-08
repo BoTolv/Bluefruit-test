@@ -35,9 +35,9 @@ var slider = document.getElementById("voresSlider");
 var output = document.getElementById("sendData"); // ændr i funktionen her og i HTML så den sender data til dioderne
 output.innerHTML = slider.value;
 
-//function slider.oninput(){
-//	output.innerHTML = this.value;
-//}
+function slider.oninput(){
+	output.innerHTML = sendData;
+}
  
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
@@ -112,12 +112,7 @@ function disconnect() {
 	ble.disconnect(ConnDeviceId, onDisconnect, onError);
 }
 function onDisconnect(){
-	if (device.disconnect) {
-		C1 = 0;
-		C2 = 0;
-	}
 	document.getElementById("statusDiv").innerHTML = "Status: Disconnected";
-	
 }
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
