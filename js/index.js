@@ -36,8 +36,8 @@ var deviceList =[];
 //output.innerHTML = slider.value;
 
 //function slider.oninput(){
-	output.innerHTML = this.value;
-}
+//	output.innerHTML = this.value;
+//}
  
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
