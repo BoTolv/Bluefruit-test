@@ -13,6 +13,9 @@ body{
 .slidecontainer{
 	width: 80%;
 }
+.slidecontainer1{
+	width: 80%;
+}
 .slider{
 	-webkit-appearance: none;
 	appearance: none;
