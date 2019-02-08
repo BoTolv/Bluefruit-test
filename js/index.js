@@ -35,10 +35,6 @@ var slider = document.getElementById("voresSlider");
 var output = document.getElementById("sendData"); // ændr i funktionen her og i HTML så den sender data til dioderne
 output.innerHTML = slider.value;
 
-function slider.oninput(){
-	output.innerHTML = sendData;
-}
- 
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
