@@ -4,8 +4,9 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
-		<link rel = "stylesheet" type = "text/css" href = "format.css">   <!-- Link to style sheet named format.css -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<link rel = "stylesheet" type = "text/css" href = "format.css">
 		<script type="text/javascript" src="cordova.js"></script> 
         <script type="text/javascript" src="js/index.js"></script>
         <title>DaSaRaTo</title>
@@ -33,7 +34,7 @@
 		<button id="ledOnButton" onclick = "data('C1,0')">Sluk</button>
 		<br><br> 
 		<p class="sansserif"><i>Cubicle 2</i></p>
-		<div class="slidecontainer1">
+		<div class="slidecontainer">
 		<input type="range" min="1" max="255" value="1" class="slider" id="voresSlider1" oninput = "Test1()">
 		<div id= "Slideren1"> </div>
 		<br>
@@ -45,7 +46,7 @@
 		<br><br>
 		<button id="ledOnButton" onclick = "data('C2,0')">Sluk</button>
 		<br>
-		<br>      <!-- Auto send på knapper....   ændr data til sendData()i knapperne-->
+		<br>      
 		<input type="text" id="messageInput" value="0"/> 
 		<button id="sendButton" onclick = "sendData()">Send</button>
 		<br>
@@ -63,11 +64,7 @@
 		<br>
     </body>
 </html>
-<!---
-Skrifttype ændres
-ændre farve på knapper, forskellige farver på knapperne (jo højere knap jo skarpere farve)
-ændre baggrundsfarven
-gøre header spændende --->
+
 
 			
 
