@@ -1,6 +1,10 @@
 body{
 	background-color: white;
 }	
+#content {
+	width: 75%;
+	margin: 90%;
+}
 .billede1{
 	width: 99%;
 	border-style: solid;
@@ -11,12 +15,12 @@ body{
 	width: 50%;
 }
 .slidecontainer{
-	width: 80%;
+	width: 100%;
 }
 .slider{
 	-webkit-appearance: none;
 	appearance: none;
-	width: 80%;
+	width: 100%;
 	height: 25px;
 	background: #d3d3d3;
 	outline: none;
@@ -40,10 +44,6 @@ width: 25px;
 height: 25px;
 background: #4CAF50;
 cursor: pointer;
-}
-#content {
-	width: 75%;
-	margin: 90%;
 }
 #bleDeviceList{
 	
