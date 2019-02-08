@@ -151,7 +151,6 @@ void loop(void)
     char c = ble.read();
     data += c;
   }
-  Serial.print("Lysstyrke: ");
   Serial.println (data);
   String LEDNummer = data.substring(0, 2);
   Serial.print("LEDNummer: ");
@@ -169,10 +168,4 @@ void loop(void)
   analogWrite (LED2, lys);
 
   delay(500);
-
-/*if sætning der gør at når man er logget af BLE slukker lysene. VIRKER IKKE!!!
-  if (!ble.available) {
-    analogWrite (LED1, LOW);
-    analogWrite(LED2, LOW);
-  }*/
 }
