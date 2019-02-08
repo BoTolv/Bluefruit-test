@@ -38,6 +38,7 @@ function Test() {
 	var slider = document.getElementById("voresSlider").value;
 	document.getElementById("Slideren").innerHTML = slider;
 	//output.innerHTML = slider.value;
+	slider = "C1," + slider;
 	data(slider);
 }
 function onLoad(){
