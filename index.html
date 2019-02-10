@@ -18,8 +18,11 @@
 		<center><img src = "logo.jpg" class="billede2"></center>
         <br>  
 		<p class="sansserif"><i>Cubicle 1</i></p>
+		
 		<div class="slidecontainer">
+		
 		<input type="range" min="1" max="255" value="1" class="slider" id="voresSlider" oninput = "Test()">
+		
 		<div id= "Slideren"> </div>
 		<br>
 		<button id="ledOnButton" onclick = "data('C1,64')">25%</button>
@@ -31,8 +34,11 @@
 		<button id="ledOnButton" onclick = "data('C1,0')">Sluk</button>
 		<br><br> 
 		<p class="sansserif"><i>Cubicle 2</i></p>
+		
 		<div class="slidecontainer">
+		
 		<input type="range" min="1" max="255" value="1" class="slider" id="voresSlider1" oninput = "Test1()">
+		
 		<div id= "Slideren1"> </div>
 		<br>
 		<button id="ledOnButton" onclick = "data('C2,64')">25%</button>
@@ -45,20 +51,24 @@
 		<br>
 		<br>      
 		<input type="text" id="messageInput" value="0"/> 
+		
 		<button id="sendButton" onclick = "sendData()">Send</button>
 		<br>
 		<div id="sendDiv"></div>
 		<br><br> 
 		<ul id="bleDeviceList"> </ul>  
+		
 		<button id="refreshButton" onClick = "refreshDeviceList()">Opdater listen</button>
 		<br>
 		<div id="statusDiv">Status: Frakoblet</div>
+		
 		<div id="bleId">DeviceId:</div>
+		
 		<div id="debugDiv"></div>
 		<br>
 		<button id="disconnectButton"onClick="disconnect()">Frakoble forbindelsen</button>
+		
 		<div id="receiveDiv"></div>
-		<br>
     </body>
 </html>
 
